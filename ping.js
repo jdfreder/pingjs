@@ -16,17 +16,15 @@ var request_image = function(url) {
 /**
  * Pings a url.
  * @param  {String} url
+ * @param  {Number} multiplier - optional, factor to adjust the ping by.  0.3 works well for HTTP servers.
  * @return {Promise} promise that resolves to a ping (ms, float).
  */
-var ping = function(url) {
+var ping = function(url, multiplier) {
     return new Promise(function(resolve, reject) {
         var start = (new Date()).getTime();
         var response = function() { 
             var delta = ((new Date()).getTime() - start);
-            
-            // HACK: Use a fudge factor to correct the ping for HTTP bulk.
-            delta /= 4;
-            
+            delta *= (multiplier || 1);
             resolve(delta); 
         };
         request_image(url).then(response).catch(response);
