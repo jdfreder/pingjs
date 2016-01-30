@@ -1,0 +1,22 @@
+{
+  "name": "web-pingjs",
+  "description": "Allows you to ping remote URLs from within a web browser context",
+  "main": "ping.js",
+  "authors": [
+    "Jonathan Frederic"
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "ping",
+    "web"
+  ],
+  "homepage": "https://github.com/jdfreder/pingjs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
