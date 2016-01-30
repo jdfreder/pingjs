@@ -1,0 +1,23 @@
+{
+  "name": "web-pingjs",
+  "version": "1.0.0",
+  "description": "Allows you to ping remote URLs from within a web browser context",
+  "main": "ping.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdfreder/pingjs.git"
+  },
+  "keywords": [
+    "ping",
+    "web"
+  ],
+  "author": "Jonathan Frederic",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jdfreder/pingjs/issues"
+  },
+  "homepage": "https://github.com/jdfreder/pingjs#readme"
+}
