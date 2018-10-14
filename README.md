@@ -19,6 +19,10 @@ of the HTML file, use a script tag to load ping.js.
 
 `npm install --save web-pingjs`
 
+### YARN
+
+`yarn add web-pingjs`
+
 ### Bower
 
 `bower install --save web-pingjs`
