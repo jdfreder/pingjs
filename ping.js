@@ -1,5 +1,11 @@
 // See LICENSE for usage information
 
+// The following lines allow the ping function to be loaded via commonjs, AMD,
+// and script tags, directly into window globals.
+// Thanks to https://github.com/umdjs/umd/blob/master/templates/returnExports.js
+// (function (root, factory) { if (typeof define === 'function' && define.amd) { define([], factory); } else if (typeof module === 'object' && module.exports) { module.exports = factory(); } else { root.ping = factory(); }
+// }(this, function () {
+
 /**
  * Creates and loads an image element by url.
  * @param  {String} url
@@ -56,5 +62,8 @@ function existsPing(url, multiplier) {
         });
     });
 }
+// return {ping, existsPing};
+// }));
 
-export {ping, existsPing};
+export default ping;
+export {existsPing};
