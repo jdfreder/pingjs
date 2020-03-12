@@ -1,5 +1,5 @@
 # pingjs
-JavaScript client side ping API.  Released under the BSD-3-Clause license, see 
+JavaScript ping API for use in a web browser context.  Released under the BSD-3-Clause license, see 
 LICENSE.  
 
 ## Installation
@@ -18,6 +18,10 @@ of the HTML file, use a script tag to load ping.js.
 ### NPM
 
 `npm install --save web-pingjs`
+
+### YARN
+
+`yarn add web-pingjs`
 
 ### Bower
 
